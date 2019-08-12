@@ -44,6 +44,10 @@
     color: $colorText;
     margin: 0;
     margin-top: 5px;
+
+    @media (min-width: 1500px) {
+      @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500);
+    }
   }
 
   &__socials {
@@ -60,6 +64,10 @@
     color: $white;
     text-transform: uppercase;
     line-height: 1.077;
+
+    @media (min-width: 1500px) {
+      @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
+    }
   }
 
   &__contacts {
@@ -70,6 +78,10 @@
     color: $white;
     text-transform: uppercase;
     line-height: 1.077;
+
+    @media (min-width: 1500px) {
+      @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
+    }
   }
 
   &__tel,
