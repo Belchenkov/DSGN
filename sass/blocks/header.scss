@@ -64,6 +64,7 @@
     color: $white;
     text-transform: uppercase;
     line-height: 1.077;
+    margin: 0;
 
     @media (min-width: 1500px) {
       @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
