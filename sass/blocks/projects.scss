@@ -12,6 +12,14 @@ $bgNine: #cecece;
     grid-column: span 5;
     grid-row: span 2;
     background: $thirty;
+
+    .projects__title {
+      font-size: 48px;
+      color: $white;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: normal;
+    }
   }
 
   &__element--two {
@@ -74,5 +82,58 @@ $bgNine: #cecece;
     background-color: $thirty;
     grid-column: span 5;
     grid-row: span 1;
+  }
+
+  &__name {
+    font-size: 24px;
+    font-family: 'roboto_condensedlight', sans-serif;
+    color: $colorText;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-family: 'roboto_condensedlight', sans-serif;
+    color: $colorText;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+
+    strong {
+      font-family: 'roboto_condensedbold', sans-serif;
+      font-weight: normal;
+    }
+  }
+
+  &__view {
+    font-size: 18px;
+    font-family: 'roboto_condensedlight', sans-serif;
+    color: $colorText;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+    background: url("/img/arrow-view.svg") left center no-repeat;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+
+    span {
+      border-bottom: 1px solid transparent;
+      transition: border-color .5s ease-in-out;
+    }
+    
+    &:hover {
+      span {
+        border-color: $colorText;
+      }
+    }
+  }
+
+  &__like {
+    max-width: 145px;
+    text-align: center;
   }
 }
