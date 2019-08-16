@@ -1,0 +1,30 @@
+.like {
+  &__btn {
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+      height: 22px;
+      transition: fill .3s ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        fill: $red;
+      }
+    }
+  }
+
+  &__counts {
+    font-size: 11px;
+    font-family: 'roboto_condensedlight', sans-serif;
+    color: $red;
+    text-transform: uppercase;
+    line-height: 1.091;
+    display: block;
+    margin: 5px 0 0 0;
+  }
+}
